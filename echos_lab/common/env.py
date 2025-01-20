@@ -8,7 +8,7 @@ PROJECT_ROOT = Path(__file__).parent.parent.parent
 DOT_ENV_PATH = PROJECT_ROOT / ".env"
 load_dotenv(DOT_ENV_PATH)
 
-ECHOS_HOME_DIRECTORY = Path(os.getenv("ECHOS_HOME_DIRECTORY", "~/.echos")).expanduser()
+ECHOS_HOME_DIRECTORY = Path(os.getenv("ECHOS_HOME_DIRECTORY", "/.echos")).expanduser()
 ECHOS_HOME_DIRECTORY.mkdir(exist_ok=True)
 
 

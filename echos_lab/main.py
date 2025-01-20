@@ -36,7 +36,7 @@ def init_agent_profile(agent_name: str, twitter_handle: str):
         return
 
     # Read the example agent yaml
-    example_agent_file = PROJECT_ROOT / "agent-profile.yaml.example"
+    example_agent_file = PROJECT_ROOT / "agent-profile.yaml"
     with open(example_agent_file, "r") as file:
         example_profile = file.read()
 

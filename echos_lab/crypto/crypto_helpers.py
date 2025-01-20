@@ -16,12 +16,12 @@ ACCOUNT_PATH = Path(get_env(envs.CRYPTO_ACCOUNT_PATH, ECHOS_HOME_DIRECTORY / "ac
 PRIVATE_KEY_PASSWORD = get_env(envs.CRYPTO_PRIVATE_KEY_PASSWORD, "password")
 
 # Private key is only needed if recovering an account
-PRIVATE_KEY = get_env(envs.CRYPTO_PRIVATE_KEY)
+PRIVATE_KEY = "b5695e380602486631d73895ab0aa013367d2877b7e872a435b4c5c73fea86a8"
 
 # Echos Chain Config
 ECHOS_CHAIN_ID = int(get_env(envs.ECHOS_CHAIN_ID, "4321"))
 ECHOS_CHAIN_RPC = get_env(envs.ECHOS_CHAIN_RPC, "https://rpc-echos-mainnet-0.t.conduit.xyz")
-
+print(ECHOS_CHAIN_RPC, "echoss")
 # Echos Contracts
 ECHO_MANAGER_ADDRESS = get_env(envs.ECHOS_MANAGER_ADDRESS, "0x136BE3E45bBCc568F4Ec0bd47d58C799e7d1ae23")
 UNISWAP_ROUTER_ADDRESS = get_env(envs.ECHOS_UNISWAP_ROUTER_ADDRESS, "0x5190f096B204C051fcc561363E8DbE023FA0119f")
